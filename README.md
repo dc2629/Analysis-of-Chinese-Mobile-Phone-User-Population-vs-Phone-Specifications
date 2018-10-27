@@ -11,3 +11,7 @@
 ## What data are you using? How will you acquire the data?
 
   There is a kaggle dataset showing the chinese mobile user demographics which can be used with the GSMArena data (can be parsed through other people’s open sourced work). 
+
+## Issues that occur with collected data
+	
+	The collected data comes from TalkingData SDK and only a portion of the device_ids are matched with the event data. Also, the device_id to device_brand/model has translation problems and foreign-only releases. A lot of brands and devices cannot be matched with the gsmarena data so I had to eliminate a good portion of the available data. This analysis surprisingly does not include "Apple" as a brand which can be a result of the TalkingData SDK being unable to collect data from Apple devices or being a Android-only SDK. This analysis can only be used to give insight of the available data and not regarded as evidence to a conclusion. 
